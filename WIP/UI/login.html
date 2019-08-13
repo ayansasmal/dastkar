@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Dastkar Billing System
+  </title>
+
+  <link rel="stylesheet" type="text/css" href="./grid.css" />
+  <link rel="stylesheet" type="text/css" href="./normalise.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="row">
+        <h1 class="heading">Dastkar Billing System</h1>
+        <ul class="main-nav">
+          <li>
+            <a href="#" class="tooltip">
+              <ion-icon name="ios-calendar" class="nav-icon"></ion-icon>
+              <span class="tooltiptext">Manage Exhibition</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="tooltip">
+              <ion-icon name="ios-people" class="nav-icon"></ion-icon>
+              <span class="tooltiptext">Manage Artisans</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="tooltip">
+              <ion-icon name="ios-card" class="nav-icon"></ion-icon>
+              <span class="tooltiptext">Manage Billing</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="tooltip">
+              <ion-icon name="ios-contact" class="nav-icon"></ion-icon>
+              <span class="tooltiptext">Logout</span>
+            </a>
+          </li>
+        </ul>
+
+        </h1>
+    </nav>
+  </header>
+  <main>
+    <section class="section-login">
+      <div class="row">
+        <div class="col span-1-of-3">
+          <div class="box login-box">
+            <h3>Login</h3>
+            <form method>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="username">Username</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" name="username" id="username" placeholder="Your Username" required />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="password">Password</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="password" name="password" id="password" placeholder="Your Password" required />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="submit" value="Sign in">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col span-2-of-3">
+          <div class="logo-box"> &nbsp; </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-exhibition">
+      <div class="row">
+        <div class="box">
+          <h3>Upcoming Exhibitions</h3>
+          <table role="table">
+            <thead role="rowgroup">
+              <tr role="row">
+                <th role="columnheader">Name</th>
+                <th role="columnheader">Location</th>
+                <th role="columnheader">From</th>
+                <th role="columnheader">To</th>
+                <th role="columnheader">Point of contact</th>
+              </tr>
+            </thead>
+            <tbody role="rowgroup">
+              <tr role="row">
+                <td role="cell">Nature Bazaar</td>
+                <td role="cell">New Delhi</td>
+                <td role="cell">12-08-2019</td>
+                <td role="cell">22-08-2019</td>
+                <td role="cell">Mahitosh Sasmal</td>
+              </tr>
+              <tr role="row">
+                <td role="cell">Nature Bazaar Pune</td>
+                <td role="cell">Pune</td>
+                <td role="cell">18-08-2019</td>
+                <td role="cell">28-08-2019</td>
+                <td role="cell">Kumar Gaurav</td>
+              </tr>
+              <tr role="row">
+                <td role="cell">&lt;exhibitionName&gt;</td>
+                <td role="cell">&lt;location&gt;</td>
+                <td role="cell">&lt;startDate&gt;</td>
+                <td role="cell">&lt;endDate&gt;</td>
+                <td role="cell">&lt;poc&gt;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box">
+          <h3>Plan Exhibition</h3>
+          <div class="add-exhibition-form">
+            <form method>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="newExhibitionName">Name</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" name="newExhibitionName" id="newExhibitionName" placeholder="Exhibition Name"
+                    required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="newAddress">Address / Location</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" name="newAddress" id="newAddress" placeholder="Address or Location" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="newFromDate">Starts from</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" name="newFromDate" id="newFromDate" placeholder="Starts from" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="newToDate">Ends on</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" name="newToDate" id="newToDate" placeholder="Ends on" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="newPoc">Point of Contact</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" name="newPoc" id="newPoc" placeholder="Point of contact" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label>Artisans</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <table role="table" class="list-artisans">
+                    <thead role="rowgroup">
+                      <tr role="row">
+                        <th role="columnheader">Name</th>
+                        <th role="columnheader" role="cell" class="col-list-artisans-actions">
+                          <div class="row">
+                            <div class="col span-2-of-4">
+                              <p class="list-artisans-actions-header">Actions</p>
+                            </div>
+                            <div class="col span-1-of-4"><span class="list-artisans-actions">
+                                <a href="#">
+                                  <ion-icon name="ios-checkmark-circle" class="verify-icon"></ion-icon>
+                                </a>
+                                <a href="#">
+                                  <ion-icon name="ios-remove-circle" class="delete-icon"></ion-icon>
+                                </a>
+                              </span>
+                            </div>
+                            <div class="col span-1-of-4">&nbsp;</div>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody role="rowgroup">
+                      <tr role="row">
+                        <td role="cell">Artisan 1</td>
+                        <td role="cell" class="col-list-artisans-actions">
+                          <div class="row">
+                            <span class="list-artisans-actions">
+                              <a href="#">
+                                <ion-icon name="ios-checkmark-circle" class="verify-icon"></ion-icon>
+                              </a>
+                              <a href="#">
+                                <ion-icon name="ios-remove-circle" class="delete-icon"></ion-icon>
+                              </a>
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr role="row">
+                        <td role="cell">Artisan 2</td>
+                        <td role="cell" class="col-list-artisans-actions">
+                          <div class="row">
+                            <span class="list-artisans-actions">
+                              <a href="#">
+                                <ion-icon name="ios-checkmark-circle" class="verify-icon"></ion-icon>
+                              </a>
+                              <a href="#">
+                                <ion-icon name="ios-remove-circle" class="delete-icon"></ion-icon>
+                              </a>
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr role="row">
+                        <td role="cell">&lt;artisansName&gt;</td>
+                        <td role="cell" class="col-list-artisans-actions">
+                          <div class="row">
+                            <span class="list-artisans-actions">
+                              <a href="#">
+                                <ion-icon name="ios-checkmark-circle" class="verify-icon"></ion-icon>
+                              </a>
+                              <a href="#">
+                                <ion-icon name="ios-remove-circle" class="delete-icon"></ion-icon>
+                              </a>
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr role="row">
+                        <td role="cell">&lt;artisansName&gt;</td>
+                        <td role="cell" class="col-list-artisans-actions">
+                          <div class="row">
+                            <span class="list-artisans-actions">
+                              <a href="#">
+                                <ion-icon name="ios-checkmark-circle" class="verify-icon"></ion-icon>
+                              </a>
+                              <a href="#">
+                                <ion-icon name="ios-remove-circle" class="delete-icon"></ion-icon>
+                              </a>
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  &nbsp;
+                </div>
+                <div class="col span-2-of-3">
+                  <div class="upload-button">
+                    <input type="file" id="newListOfArtisans" name="newListOfArtisans" accept="text/*">
+                    <ion-icon name="md-cloud-upload" class="upload-icon"></ion-icon>
+                    <label for="newListOfArtisans">
+                      Upload list of Artisans ( only *.txt, *.csv )
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="submit" value="Create Exhibition">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box">
+          <h3>Modify Exhibition</h3>
+          <div class="modify-exhibition-form">
+            <form method>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label>Exhibition to be updated</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <select class="select-css">
+                    <option value="-1" selected="selected">Please select</option>
+                    <option value="0">Nature Bazaar, New Delhi</option>
+                    <option value="1">Nature Bazaar Pune, Pune</option>
+                    <option value="1">&lt;exhibitionName&gt;, &lt;location&gt;</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="exhibitionName">Name</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" name="exhibitionName" id="exhibitionName" placeholder="Exhibition Name" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="address">Address / Location</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" name="address" id="address" placeholder="Address or Location" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="fromDate">Starts from</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" name="fromDate" id="fromDate" placeholder="Starts from" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="toDate">Ends on</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" name="toDate" id="toDate" placeholder="Ends on" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="poc">Point of Contact</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" name="poc" id="poc" placeholder="Point of contact" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label>Artisans already included</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <table role="table" class="list-artisans">
+                    <thead role="rowgroup">
+                      <tr role="row">
+                        <th role="columnheader">Name</th>
+                        <th role="columnheader" role="cell" class="col-list-artisans-actions">
+                          <div class="row">
+                            <div class="col span-2-of-4">
+                              <p class="list-artisans-actions-header">Actions</p>
+                            </div>
+                            <div class="col span-1-of-4"><span class="list-artisans-actions">
+                                <a href="#">
+                                  <ion-icon name="ios-checkmark-circle" class="verify-icon"></ion-icon>
+                                </a>
+                                <a href="#">
+                                  <ion-icon name="ios-remove-circle" class="delete-icon"></ion-icon>
+                                </a>
+                              </span>
+                            </div>
+                            <div class="col span-1-of-4">&nbsp;</div>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody role="rowgroup">
+                      <tr role="row">
+                        <td role="cell">Artisan 1</td>
+                        <td role="cell" class="col-list-artisans-actions">
+                          <div class="row">
+                            <span class="list-artisans-actions">
+                              <a href="#">
+                                <ion-icon name="ios-checkmark-circle" class="verify-icon"></ion-icon>
+                              </a>
+                              <a href="#">
+                                <ion-icon name="ios-remove-circle" class="delete-icon"></ion-icon>
+                              </a>
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr role="row">
+                        <td role="cell">Artisan 2</td>
+                        <td role="cell" class="col-list-artisans-actions">
+                          <div class="row">
+                            <span class="list-artisans-actions">
+                              <a href="#">
+                                <ion-icon name="ios-checkmark-circle" class="verify-icon"></ion-icon>
+                              </a>
+                              <a href="#">
+                                <ion-icon name="ios-remove-circle" class="delete-icon"></ion-icon>
+                              </a>
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr role="row">
+                        <td role="cell">&lt;verifiedArtisansName&gt;</td>
+                        <td role="cell" class="col-list-artisans-actions">
+                          <div class="row">
+                            <span class="list-artisans-actions">
+                              <a href="#">
+                                <ion-icon name="ios-checkmark-circle" class="verify-icon"></ion-icon>
+                              </a>
+                              <a href="#">
+                                <ion-icon name="ios-remove-circle" class="delete-icon"></ion-icon>
+                              </a>
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr role="row">
+                        <td role="cell">&lt;inValidArtisansName&gt;</td>
+                        <td role="cell" class="col-list-artisans-actions">
+                          <div class="row">
+                            <span class="list-artisans-actions">
+                              <a href="#">
+                                <ion-icon name="ios-close-circle" class="invalid-icon"></ion-icon>
+                              </a>
+                              <a href="#">
+                                <ion-icon name="ios-remove-circle" class="delete-icon"></ion-icon>
+                              </a>
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  &nbsp;
+                </div>
+                <div class="col span-2-of-3">
+                  <div class="upload-button">
+                    <input type="file" id="listOfArtisans" name="listOfArtisans" accept="text/*">
+                    <ion-icon name="md-cloud-upload" class="upload-icon"></ion-icon>
+                    <label for="listOfArtisans">
+                      Upload updated list of Artisans ( only *.txt, *.csv )
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="submit" value="Modify Exhibition Plan">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-artisans">
+      <div class="row">
+        <div class="box">
+          <h3>Add Artisan</h3>
+          <div class="create-artisan-form">
+            <form method>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="artisanName">Name</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" id="artisanName" name="artisanName" placeholder="Artisan's Name">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="artisanAddress">Address</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" id="artisanAddress" name="artisanAddress" placeholder="Artisan's Address">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="artisansContactNo">Contact No.</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" id="artisansContactNo" name="artisansContactNo"
+                    placeholder="Artisan's Contact No.">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="artisansProducts">Type of items sold</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <textarea id="artisansProducts" name="artisansProducts" rows="5"
+                    placeholder="Types of products selling"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="submit" value="Add Artisan">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box">
+          <h3>Update Artisan</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box">
+          <h3>Delete Artisan</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="row">
+      <div class="col span-1-of-3">
+        <p>&copy; 2019</p>
+      </div>
+      <div class="col span-1-of-3">
+        <div class="logo-container">
+          <div class="logo"></div>
+        </div>
+      </div>
+      <div class="col span-1-of-3">
+        <ul class="social-links">
+          <li><a href="#">
+              <ion-icon name="logo-facebook" class="footer-social"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-twitter" class="footer-social"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-googleplus" class="footer-social"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-instagram" class="footer-social"></ion-icon>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer-text">
+        <p>This site is under development. Please mind the mis alignment</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>

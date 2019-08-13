@@ -1,2 +1,3 @@
-# dastkar
-A wip for pet project
+# DASTKAR BILLING SYSTEM
+
+A WIP for pet project

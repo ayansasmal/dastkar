@@ -71,6 +71,14 @@
                 </div>
               </div>
               <div class="row">
+                <div class="login-with-google">
+                  <a href="#">
+                    <ion-icon name="logo-google" class="login-google-icon"></ion-icon>
+                    <span>Google</span>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
                 <div class="col span-1-of-3">
                   <label>&nbsp;</label>
                 </div>
@@ -311,14 +319,6 @@
               </div>
               <div class="row">
                 <div class="col span-1-of-3">
-                  <label for="exhibitionName">Name</label>
-                </div>
-                <div class="col span-2-of-3">
-                  <input type="text" name="exhibitionName" id="exhibitionName" placeholder="Exhibition Name" required>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col span-1-of-3">
                   <label for="address">Address / Location</label>
                 </div>
                 <div class="col span-2-of-3">
@@ -524,11 +524,119 @@
       <div class="row">
         <div class="box">
           <h3>Update Artisan</h3>
+          <div class="update-artisan-form">
+            <form method>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label>Select artisan</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <select class="select-css">
+                    <option value="-1" selected="selected">Please select</option>
+                    <option value="0">Artisan 1</option>
+                    <option value="1">Artisan 2</option>
+                    <option value="1">&lt;artisanName&gt;</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="artisanAddress">Address</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" id="artisanAddress" name="artisanAddress" placeholder="Artisan's Address">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="artisansContactNo">Contact No.</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="text" id="artisansContactNo" name="artisansContactNo"
+                    placeholder="Artisan's Contact No.">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="artisansProducts">Type of items sold</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <textarea id="artisansProducts" name="artisansProducts" rows="5"
+                    placeholder="Types of products selling"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="submit" value="Update Artisan">
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
       <div class="row">
         <div class="box">
           <h3>Delete Artisan</h3>
+          <div class="delete-artisan-form">
+            <form method>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label>Select artisan to delete</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <select class="select-css">
+                    <option value="-1" selected="selected">Please select</option>
+                    <option value="0">Artisan 1</option>
+                    <option value="1">Artisan 2</option>
+                    <option value="1">&lt;artisanName&gt;</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="artisanName">Name</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <label class="label-value">&lt;artisan name&gt;</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="artisanAddress">Address</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <label class="label-value">&lt;address&gt;</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="artisansContactNo">Contact No.</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <label class="label-value">&lt;contact number&gt;</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="artisansProducts">Type of items sold</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <label class="label-value">&lt;items sold by this artisan&gt;</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input type="submit" value="Confirm">
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>

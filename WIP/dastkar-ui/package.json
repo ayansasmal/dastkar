@@ -14,7 +14,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test-reports": "react-scripts test --coverage && codecov -t eed1411e-ae0b-48bc-b4f1-6dbb2384e428"
   },
   "eslintConfig": {
     "extends": "react-app"

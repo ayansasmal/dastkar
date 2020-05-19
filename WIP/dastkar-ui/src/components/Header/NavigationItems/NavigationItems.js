@@ -5,11 +5,15 @@ import NavigationItem from "./NavigationItem/NavigationItem";
 const NavigationItems = (props) => {
   const navItems = [
     {
-      target: "/",
+      target: "/exhibtions",
       icon: "calendar-outline",
       toolTipText: "Manage Exhibition",
     },
-    { target: "/", icon: "people-outline", toolTipText: "Manage Artisan" },
+    {
+      target: "/artisans",
+      icon: "people-outline",
+      toolTipText: "Manage Artisan",
+    },
     { target: "/", icon: "card-outline", toolTipText: "Manage Billing" },
     {
       target: "/",

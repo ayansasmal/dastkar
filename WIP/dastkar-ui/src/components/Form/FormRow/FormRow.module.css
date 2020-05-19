@@ -1,0 +1,6 @@
+.FormRow {
+  max-width: 95vw;
+  margin: 0.7% auto;
+  width: 85%;
+  border-bottom: 1px solid #cccccc;
+}

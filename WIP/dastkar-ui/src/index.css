@@ -1,13 +1,64 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:hover,
+*:active {
+  outline: none;
+}
+
+html,
+body {
+  background-color: #f7d8aa;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+body {
+  width: 99vw;
+  height: 100vh;
+  background: url(./assets/images/Dastkar_LOGO_BG.png);
+  background-repeat: no-repeat;
+  background-position: bottom -400px right -400px;
+  background-attachment: fixed;
+  margin-left: 0.5vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* 
+--color1: hsla(36%, 31%, 97%, 1);
+--color2: hsla(34%, 38%, 96%, 1);
+--color3: hsla(32%, 46%, 96%, 1);
+--color4: hsla(31%, 53%, 95%, 1);
+--color5: hsla(30%, 61%, 94%, 1);
+--color6: hsla(29%, 68%, 94%, 1);
+--color7: hsla(29%, 76%, 93%, 1);
+--color8: hsla(29%, 84%, 92%, 1);
+--color9: hsla(28%, 92%, 92%, 1);
+--color10: hsla(28%, 100%, 91%, 1);
+
+$color1: #f7d8aaff;
+$color2: #f5cc97ff;
+$color3: #f4c084ff;
+$color4: #f2b471ff;
+$color5: #f0a85eff;
+$color6: #ef9c4cff;
+$color7: #ed9039ff;
+$color8: #eb8426ff;
+$color9: #ea7813ff;
+$color10: #e86c00ff;
+
+*/

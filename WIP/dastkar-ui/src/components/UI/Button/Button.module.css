@@ -1,0 +1,41 @@
+.Button {
+  padding: 5px 10px;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: #f7d8aa;
+  border: 1px solid #ffc165;
+  color: white;
+  margin: 10px 10px 0 10px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.Button:hover,
+.Button:active {
+  background-color: #6ff56a;
+  border: 1px solid #37a833;
+}
+
+.Cancel {
+  background-color: #ff5555;
+  border: 1px solid #dc2f02;
+  align-self: flex-start;
+}
+
+.Cancel:hover,
+.Cancel:active {
+  background-color: #dc2f02;
+  border: 1px solid #6a040f;
+}
+
+.Submit {
+  background-color: #93ab55;
+  border: 1px solid #5d8100;
+  float: right;
+}
+
+.Submit:hover,
+.Submit:active {
+  background-color: #5d8100;
+  border: 1px solid #005704;
+}

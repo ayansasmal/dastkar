@@ -1,0 +1,6 @@
+.Dashboard {
+  box-sizing: border-box;
+  display: inline-flex;
+  width: 100%;
+  /* border: 10px solid black; */
+}

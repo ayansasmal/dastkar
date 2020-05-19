@@ -1,0 +1,21 @@
+.Header {
+  width: 100%;
+  background-color: #e67e22;
+  padding-top: 10px;
+}
+
+.Row {
+  width: 100%;
+  margin: 0.7% auto;
+  display: flex;
+  /* border: 1px solid black; */
+}
+
+.Heading {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0 0 20px 25px;
+  color: #000;
+  font-size: 200%;
+  word-spacing: 3px;
+}

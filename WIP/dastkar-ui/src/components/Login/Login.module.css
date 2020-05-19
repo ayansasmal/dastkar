@@ -1,0 +1,78 @@
+.Login {
+  background-color: rgba(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px 1px;
+  padding: 20px;
+  width: 35%;
+  margin: 40px 20px;
+  float: right;
+}
+
+.Login h3 {
+  font-weight: 300;
+  font-size: 125%;
+  text-transform: uppercase;
+}
+
+.Login h3:after {
+  display: block;
+  height: 2px;
+  background-color: #f7d8aa;
+  content: " ";
+  margin: 10px auto;
+}
+
+.Login p {
+  text-align: center;
+}
+
+/* .Login input {
+  margin-left: 5px;
+  margin-bottom: 10px;
+} */
+
+.login-with-google {
+  margin: 5px;
+  float: left;
+}
+
+.login-with-google a {
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 1px solid rgb(122, 0, 0);
+  height: 40px;
+  display: inline-block;
+}
+
+.login-with-google a:link,
+.login-with-google a:visited {
+  background-color: #f7d8aa;
+  border: 1px solid #ffc165;
+  color: #000;
+  transition: all 0.2s;
+}
+
+.login-with-google a:hover,
+.login-with-google a:active {
+  font-weight: 600;
+  background-color: red;
+  color: #fff;
+  border: 1px solid rgb(122, 0, 0);
+}
+
+.login-google-icon {
+  border-right: 2px solid #fff;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.login-with-google span {
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 115%;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}

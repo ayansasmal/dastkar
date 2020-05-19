@@ -1,0 +1,12 @@
+.Form {
+  margin: 5px 10px;
+}
+
+.Form:after {
+  display: block;
+  height: 2px;
+  background-color: #d3973d;
+  content: " ";
+  margin: 10px auto;
+  width: 100%;
+}

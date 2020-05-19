@@ -5,9 +5,11 @@ const getInput = (props, type = "text") => {
   switch (type) {
     case "text":
     case "password":
-      return <input {...props} />;
+      return <input className={classes.Input} {...props} />;
     default:
-      return <input type="text" placeholder="default" />;
+      return (
+        <input className={classes.Input} type="text" placeholder="default" />
+      );
   }
 };
 

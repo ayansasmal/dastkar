@@ -1,9 +1,9 @@
-input {
+.Input {
   margin-top: 10px;
 }
 
-input[type="text"],
-input[type="password"] {
+.Input[type="text"],
+.Input[type="password"] {
   width: 95%;
   padding: 5px 10px;
   border-radius: 3px;
@@ -12,14 +12,14 @@ input[type="password"] {
   font-weight: 350;
 }
 
-input:placeholder-shown,
-textarea:placeholder-shown {
+.Input:placeholder-shown,
+.Textarea:placeholder-shown {
   font-size: 80%;
   font-weight: 200;
   font-style: italic;
 }
 
-input:after {
+.Input:after {
   display: block;
   height: 2px;
   background-color: grey;

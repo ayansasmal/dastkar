@@ -23,7 +23,6 @@ body {
 
 body {
   width: 99vw;
-  height: 100vh;
   background: url(./assets/images/Dastkar_LOGO_BG.png);
   background-repeat: no-repeat;
   background-position: bottom -400px right -400px;
@@ -31,6 +30,7 @@ body {
   margin-left: 0.5vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: calc(100vh - 150px);
 }
 
 code {

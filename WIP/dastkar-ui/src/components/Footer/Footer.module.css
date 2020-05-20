@@ -2,6 +2,8 @@
   background: rgba(128, 78, 3, 0.9);
   height: 150px;
   color: #fff;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .Footer ion-icon {

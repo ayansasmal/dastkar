@@ -2,7 +2,11 @@ import React from "react";
 import classes from "./Form.module.css";
 
 const Form = (props) => {
-  return <div className={classes.Form}>{props.children}</div>;
+  return (
+    <form className={classes.Form} onSubmit={props.onSubmit}>
+      {props.children}
+    </form>
+  );
 };
 
 export default Form;

@@ -5,7 +5,11 @@ const Button = (props) => {
   const btnClasses = [classes.Button];
   if (props.type === "cancel") btnClasses.push(classes.Cancel);
   if (props.type === "submit") btnClasses.push(classes.Submit);
-  return <button className={btnClasses.join(" ")}>{props.name}</button>;
+  return (
+    <button className={btnClasses.join(" ")} onClick={props.onClick}>
+      {props.name}
+    </button>
+  );
 };
 
 export default Button;

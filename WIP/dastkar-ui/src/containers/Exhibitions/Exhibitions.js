@@ -6,7 +6,6 @@ const Exhibitions = (props) => {
   return (
     <div className={classes.Exhibitions}>
       <UpcomingEvents />
-      <p>In Exhibitions</p>
     </div>
   );
 };

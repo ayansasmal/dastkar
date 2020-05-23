@@ -4,3 +4,10 @@
   width: 100%;
   text-align: center;
 }
+
+@media (max-width: 1000px) {
+  .SocialSignIns {
+    display: block;
+    padding: 0px;
+  }
+}

@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Header.module.css";
-import NavigationItems from "./NavigationItems/NavigationItems";
+import Toolbar from "../Toolbar/Toolbar";
+import SideDrawer from "../SideDrawer/SideDrawer";
 
-const Header = () => {
+const Header = (props) => {
+  const [sideBarOpen, setSideBarOpen] = useState(true);
+  const toggleSideBarHandler = () => {
+    console.log("toggleSideBarHandler");
+    if (sideBarOpen) {
+      setSideBarOpen(!sideBarOpen);
+    } else {
+      setSideBarOpen(true);
+    }
+  };
   return (
     <header className={classes.Header}>
-      <nav>
-        <div className={classes.Row}>
-          <h1 className={classes.Heading}>Dastkar Billing System</h1>
-          <NavigationItems />
-        </div>
-      </nav>
+      <Toolbar drawerToggleClicked={toggleSideBarHandler} />
+      <SideDrawer open={sideBarOpen} closed={toggleSideBarHandler} />
     </header>
   );
 };

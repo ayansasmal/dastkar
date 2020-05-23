@@ -2,5 +2,6 @@
   box-sizing: border-box;
   display: inline-flex;
   width: 100%;
+  justify-content: flex-end;
   /* border: 10px solid black; */
 }

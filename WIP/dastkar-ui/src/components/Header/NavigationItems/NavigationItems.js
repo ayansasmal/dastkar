@@ -48,14 +48,12 @@ const NavigationItems = (props) => {
       ],
     },
   };
-  console.log("props", props);
   let navs = navItems[props.type ? props.type : "primary"];
   let navType = props.navType;
   if (props.type === "secondary") {
     navs = navItems.secondary[props.subType];
     navType = "button";
   }
-  console.log("Navs::", navs);
   let navigationLinks = navs.map((item) => (
     <NavigationItem
       key={item.icon}

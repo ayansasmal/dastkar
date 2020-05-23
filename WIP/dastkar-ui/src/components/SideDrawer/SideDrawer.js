@@ -18,7 +18,7 @@ const SideDrawer = (props) => {
     // </Aux>
     <div className={attachedClasses.join(" ")} onClick={props.closed}>
       <nav>
-        <h1 className={classes.Heading}>Dastkar Billing System</h1>
+        <h3 className={classes.Heading}>Dastkar Billing System</h3>
         <NavigationItems type="primary" navType="button" />
       </nav>
     </div>

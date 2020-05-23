@@ -10,5 +10,6 @@
   .NavigationItems {
     flex-flow: column;
     margin-right: 10px;
+    width: 100%;
   }
 }

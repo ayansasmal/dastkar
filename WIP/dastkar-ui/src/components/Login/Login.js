@@ -29,7 +29,7 @@ const Login = (props) => {
             autoComplete="current-password"
           />
         </FormRow>
-        <FormButtonSet setType="login" submitName="Sign In" />
+        <FormButtonSet setType="login" submitName="Sign In"/>
         <p>- OR -</p>
         <br />
         <SocialSignIns />

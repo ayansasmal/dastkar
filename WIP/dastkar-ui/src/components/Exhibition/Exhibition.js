@@ -9,9 +9,13 @@ const Exhibition = (props) => {
   return (
     <div className={classes.Exhibition}>
       <h4>
-        {props.name}, {props.location}
+        {props.name}
       </h4>
       <div className={classes.Detail}>
+        <div>
+          <ion-icon name="location-outline" />
+          <span className={classes.Location}>{props.location}</span>
+        </div>
         <div>
           <ion-icon name="calendar-outline" />
           <span>

@@ -1,5 +1,6 @@
 .Input {
   margin-top: 10px;
+  letter-spacing: 1px;
 }
 
 .Input[type="text"],

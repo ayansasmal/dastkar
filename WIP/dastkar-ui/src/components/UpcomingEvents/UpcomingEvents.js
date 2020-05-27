@@ -17,7 +17,7 @@ const UpcomingEvents = (props) => {
         name="Nature Bazaar"
         location="Pune"
         startDate="05-02-2020"
-        endDate="06-02-2020"
+        endDate="06-10-2020"
         spoc="Mahitosh Sasmal"
       />
       <Exhibition
@@ -31,7 +31,7 @@ const UpcomingEvents = (props) => {
         name="Nature Bazaar"
         location="Bangalore"
         startDate="05-02-2020"
-        endDate="06-02-2020"
+        endDate="06-10-2020"
         spoc="Mahitosh Sasmal"
       />
       <Exhibition

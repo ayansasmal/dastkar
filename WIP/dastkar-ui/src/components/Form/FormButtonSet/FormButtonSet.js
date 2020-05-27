@@ -10,7 +10,7 @@ const FormButtonSet = (props) => {
         key="submit"
         type="submit"
         name={props.submitName}
-        onClick={props.onClick}
+        onClick={props.onSubmit}
       />
     );
   } else {
@@ -27,7 +27,7 @@ const FormButtonSet = (props) => {
         key="submit"
         type="submit"
         name={props.submitName}
-        onClick={props.onClick}
+        onClick={props.onSubmit}
       />
     );
   }

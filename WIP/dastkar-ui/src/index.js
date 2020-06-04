@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import "./grid.css";
-import "./normalise.css";
-import "./index.css";
 import App from "./App";
+import "./grid.css";
+import "./index.css";
+import "./normalise.css";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(

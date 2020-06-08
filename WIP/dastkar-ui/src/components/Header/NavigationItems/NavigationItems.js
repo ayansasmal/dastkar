@@ -5,7 +5,7 @@ import NavigationItem from "./NavigationItem/NavigationItem";
 const NavigationItems = (props) => {
   const navItems = {
     primary: [
-      { target: "/", icon: "home-outline", toolTipText: "Dashboard" },
+      { target: "/dashboard", icon: "home-outline", toolTipText: "Dashboard" },
       {
         target: "/exhibitions",
         icon: "calendar-outline",

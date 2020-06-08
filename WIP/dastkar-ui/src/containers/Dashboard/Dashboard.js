@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "./Dashboard.module.css";
-import UpcomingEvents from "../../components/UpcomingEvents/UpcomingEvents";
+import Events from "../../components/Events/Events";
 
 const Dashboard = (props) => {
   return (
     <div className={classes.Dashboard}>
-      <UpcomingEvents />
+      <Events title="Ongoing Exhibitions"/>
     </div>
   );
 };

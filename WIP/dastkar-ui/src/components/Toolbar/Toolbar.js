@@ -6,19 +6,6 @@ import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
 
 const Toolbar = (props) => {
   let primaryClasses = [classes.Row, classes.DesktopOnly];
-  let secondaryNav = null;
-  if (props.location.pathname !== "/") {
-    primaryClasses.push(classes.Shadow);
-    secondaryNav = (
-      <div className={classes.Row}>
-        <NavigationItems
-          type="secondary"
-          subType="exhibitions"
-          navType="button"
-        />
-      </div>
-    );
-  }
   return (
     <div className={classes.Toolbar}>
       <DrawerToggle clicked={props.drawerToggleClicked} />
@@ -27,7 +14,6 @@ const Toolbar = (props) => {
           <h1 className={classes.Heading}>Dastkar Billing System</h1>
           <NavigationItems type="primary" navType="icons" />
         </div>
-        {secondaryNav}
       </nav>
     </div>
   );

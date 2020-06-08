@@ -1,0 +1,18 @@
+<script src="https://kit.fontawesome.com/e4172d5197.js" crossorigin="anonymous"></script>
+search <i class="fas fa-search"></i>
+
+exhibition <i class="far fa-calendar-alt"></i>
+plan exhibition <i class="far fa-calendar-plus"></i>
+modify <i class="far fa-edit"></i>
+
+billing <i class="fas fa-cash-register"></i>
+make a purchase <i class="far fa-credit-card"></i>
+
+artisan <i class="fab fa-firstdraft"></i>
+edit artisan <i class="fas fa-user-edit"></i>
+
+profile <i class="fas fa-user-circle"></i>
+
+logout <i class="fas fa-power-off"></i>
+home/dashboard <i class="fas fa-home"></i>
+settings <i class="fas fa-user-cog"></i>

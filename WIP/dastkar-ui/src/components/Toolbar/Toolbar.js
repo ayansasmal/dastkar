@@ -13,7 +13,7 @@ const Toolbar = (props) => {
       <div className={classes.Row}>
         <NavigationItems
           type="secondary"
-          subType="exhibitions"
+          subType={props.location.pathname.split('/')[1]}
           navType="button"
         />
       </div>

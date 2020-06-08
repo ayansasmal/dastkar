@@ -5,11 +5,24 @@ import NavigationItem from "./NavigationItem/NavigationItem";
 const NavigationItems = (props) => {
   const navItems = {
     primary: [
-      { target: "/", icon: "home-outline", toolTipText: "Dashboard" },
+      { target: "/dashboard", icon: "home-outline", toolTipText: "Dashboard" },
       {
         target: "/exhibitions",
         icon: "calendar-outline",
         toolTipText: "Manage Exhibition",
+        child :[
+          {
+            target: "/exhibitions/plan",
+            icon: "home-outline",
+            name: "Exhibtion Planner",
+          },
+          {
+            target: "/exhibitions/modify",
+            icon: "calendar-outline",
+            name: "Modify Exhibition",
+          },
+          { target: "/", icon: "card-outline", name: "Manage Billing" },
+        ]
       },
       {
         target: "/artisans",
@@ -25,9 +38,29 @@ const NavigationItems = (props) => {
       {
         target: "/",
         icon: "person-circle-outline",
+        toolTipText:"My Account",
+        child:[
+          {
+            target: "/exhibitions/plan",
+            icon: "home-outline",
+            name: "Exhibtion Planner",
+          },
+          {
+            target: "/exhibitions/modify",
+            icon: "calendar-outline",
+            name: "Modify Exhibition",
+          },
+          { target: "/", icon: "card-outline", name: "Manage Billing" },
+        ]
       },
     ],
     secondary: {
+      artisans:[{
+        target: "/artisans/add",
+        icon: "people-outline",
+        toolTipText: "Manage Artisan",
+      }],
+      dashboard:[],
       exhibitions: [
         {
           target: "/exhibitions/plan",
@@ -38,11 +71,6 @@ const NavigationItems = (props) => {
           target: "/exhibitions/modify",
           icon: "calendar-outline",
           toolTipText: "Manage Exhibition",
-        },
-        {
-          target: "/artisans",
-          icon: "people-outline",
-          toolTipText: "Manage Artisan",
         },
         { target: "/", icon: "card-outline", toolTipText: "Manage Billing" },
       ],
@@ -61,9 +89,9 @@ const NavigationItems = (props) => {
       icon={item.icon}
       toolTipText={item.toolTipText}
       type={navType}
+      children={item.child}
     />
   ));
-
   return <ul className={classes.NavigationItems}>{navigationLinks}</ul>;
 };
 

@@ -20,15 +20,14 @@
 
 .NavigationItem a:hover,
 .NavigationItem a:active {
-  border-bottom: 2px solid white;
-  background-color: rgb(146, 73, 9);
+  border-bottom: 2px solid #924909;
 }
 
 /* Nav Button */
 
 .NavButton {
-  display: inline-block;
-  margin: 10px 5px 10px 0px;
+  display: inline;
+  margin: 10px 10px;
   padding: 5px 0 5px 0;
   border-radius: 5px;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
@@ -56,82 +55,13 @@
 .NavIcon ion-icon {
   font-size: 40px;
 }
-
-.ChildMenuHeading {
-  font-weight: bold;
-  text-align: center;
-}
-
-.ChildMenu{
-  width: 100%;
-  text-align: start;
-  margin: 5px 5px 0px 0px;
-}
-
-.ChildMenu ion-icon {
-  font-size: 20px;
-  float: left;
-}
-
-.arrow {
-  display: none;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid rgb(146, 73, 9, 0.85);
-  margin-left: 15px;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.NavIcon {
-  position: relative;
-  display: inline-block;
-  color: white;
-  text-align: end;
-}
-
-.NavIcon .dropdownContent {
-  display: none;
-  visibility: hidden;
-  transition: visibilty 3s linear 3s;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdownContent {
-  position: absolute;
-  background-color: rgb(146, 73, 9, 0.85);
-  width: 200px;
-  box-shadow: 5px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  left: -120px;
-}
-
-/* Links inside the dropdown */
-.dropdownContent a {
-  color: black;
-  padding: 12px 2px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Show the dropdown menu on hover */
-.NavIcon:hover .dropdownContent {
-  display: block;
-  visibility: visible;
-}
-
-.NavIcon:hover .arrow {
-  display: block;
-}
-
 /* ---- TOOLTIP ---- */
 /* Tooltip text */
 
 .NavIcon {
   position: relative;
   display: inline-block;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
 }
 

@@ -2,6 +2,7 @@ import axios from "./axios";
 import MockAdapter from "axios-mock-adapter";
 import MockResponses from "./mocks";
 
+// This sets the mock adapter on the default instance
 var mock = new MockAdapter(axios);
 
 export const getMockResponse = (url, method, scenario="success") => {

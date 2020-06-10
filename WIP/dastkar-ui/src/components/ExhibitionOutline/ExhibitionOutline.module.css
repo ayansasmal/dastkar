@@ -1,7 +1,7 @@
 .Exhibition {
   width: 275px;
   height: auto;
-  background-color: rgb(95, 158, 160, 0.6);
+  background-color: rgb(95, 158, 160, 0.8);
   padding: 10px 20px;
   box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.5);
   display: inline-block;
@@ -9,7 +9,14 @@
   border: 1px solid rgb(95, 158, 160);
   margin: 5px 20px 20px 5px;
   color: #555;
-  transition: all 0.3s ease-in-out;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.2s;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .Exhibition:hover {
@@ -33,11 +40,11 @@
 
 .Exhibition ion-icon {
   font-size: 20px;
-  padding: 0 10px;
+  padding: 0px 6px 0px 0px;
 }
 
 .Detail {
-  margin: 1px 0 10px 0;
+  /* margin: 1px 0 10px 0; */
   padding: 10px 0px;
   font-weight: 400;
   font-size: 75%;
@@ -49,10 +56,60 @@
   margin-bottom: 10px;
 }
 
-.Detail span {
-  
+.Data{
+  width: 100%;
 }
 
 .Location {
   font-size: 125%;
+}
+
+.Pie {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .Data{
+    width: 70%;
+  }
+  .Exhibition {
+    width: 90%;
+    display: -webkit-box;
+    margin-left: 30px;
+    transition: none;
+    transform: none;
+  }
+
+  .Exhibition:hover {
+    transform: none;
+  }
+
+  .Pie {
+    display: block;
+    border-right: 2px solid white;
+    padding-top: 25px;
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Pie {
+    display: none;
+  }
+  .Exhibition {
+    width: 95%;
+    display: -webkit-box;
+    margin-left: 5px;
+    transition: none;
+    transform: none;
+  }
+
+  .Exhibition:hover {
+    transform: none;
+  }
+
+  .Data{
+    width: 100%;
+  }
 }

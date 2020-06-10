@@ -21,11 +21,11 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   letter-spacing: 1px;
-  margin-left: 0.5vw;
+  margin-left: 1vw;
 }
 
 body {
-  width: 99vw;
+  width: 98vw;
   background: url(./assets/images/Dastkar_LOGO_BG.png);
   background-repeat: no-repeat;
   background-position: bottom -400px right -400px;
@@ -34,6 +34,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: calc(100vh - 150px);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #b3843eaf;
+  border-radius: 10px;
 }
 
 code {

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./grid.css";
+import "./circle.css";
 import "./index.css";
 import "./normalise.css";
 import * as serviceWorker from "./serviceWorker";

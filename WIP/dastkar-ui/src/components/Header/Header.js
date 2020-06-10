@@ -4,7 +4,7 @@ import Toolbar from "../Toolbar/Toolbar";
 import SideDrawer from "../SideDrawer/SideDrawer";
 
 const Header = (props) => {
-  const [sideBarOpen, setSideBarOpen] = useState(true);
+  const [sideBarOpen, setSideBarOpen] = useState(false);
   const toggleSideBarHandler = () => {
     console.log("toggleSideBarHandler");
     if (sideBarOpen) {

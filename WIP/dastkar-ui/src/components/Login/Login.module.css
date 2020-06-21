@@ -3,10 +3,10 @@
   border-radius: 5px;
   box-shadow: 0 8px 10px -6px;
   padding: 20px;
-  width: 30%;
+  width: 400px;
   margin: 40px 20px;
   float: right;
-  height: 360px;
+  height: fit-content;
 }
 
 .Login h3 {

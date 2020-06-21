@@ -13,7 +13,6 @@
 html,
 body {
   background-color: #f7d8aa;
-  /* color: #555; */
   color: black;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
@@ -21,19 +20,18 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   letter-spacing: 1px;
-  margin-left: 1vw;
 }
 
 body {
-  width: 98vw;
   background: url(./assets/images/Dastkar_LOGO_BG.png);
   background-repeat: no-repeat;
   background-position: bottom -400px right -400px;
   background-attachment: fixed;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: calc(100vh - 150px);
+  margin: 0px 5px;
+  padding: 0px 5px;
 }
 
 ::-webkit-scrollbar {

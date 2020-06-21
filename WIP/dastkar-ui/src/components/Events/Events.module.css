@@ -3,14 +3,32 @@
   border-radius: 5px;
   box-shadow: 0px 10px 15px -6px;
   padding: 20px;
-  width: 70%;
   margin: 20px 20px;
 }
 
 .Heading {
+  display: inline-block;
+  width: 100%;
+}
+
+.Heading h3{
   font-weight: 300;
   font-size: 125%;
   text-transform: uppercase;
+  display: inline;
+}
+  
+.Chevron {
+  display: block;
+  float: right;
+  transition: transform 0.5s;
+  border-radius: 50%;
+  padding: 0px 2px;
+}
+
+.Chevron ion-icon {
+  vertical-align: middle;
+  color: #ce701d;
 }
 
 .Heading:after {
@@ -23,23 +41,54 @@
 
 .Carousel{
   display: flex;
+  visibility: visible;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  padding: 10px;
+  padding: 5px; 
+  width: inherit;
 }
 
 .Full {
   visibility: visible;
-  width: 97%;
+}
+
+.Hidden {
+  /* display: none; */
+  visibility: hidden;
+  height: 0px;
+  padding:0px;
+}
+
+.Rotate {
+  transform: rotate(90deg);
+}
+
+@media (max-width:770px) {
+  .Heading h3{
+    font-weight: 300;
+    font-size: 100%;
+    text-transform: uppercase;
+    display: inline;
+  }
 }
 
 @media (max-width: 1100px) {
   .Carousel{
     flex-direction: column;
     height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
     scroll-snap-type: y mandatory;
     padding: 2px;
+  }
+
+  .Hidden {
+    /* display: none; */
+    visibility: hidden;
+    height: 0px;
+    padding:0px;
   }
 }

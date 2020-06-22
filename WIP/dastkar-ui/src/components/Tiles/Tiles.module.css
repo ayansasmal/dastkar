@@ -1,0 +1,9 @@
+.Tiles{
+    text-align: left;
+}
+
+@media (max-width: 770px) {
+    .Tiles{
+        text-align: center;
+    }
+}

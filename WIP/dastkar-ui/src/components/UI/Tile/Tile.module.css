@@ -1,0 +1,51 @@
+.Tile {
+  display: inline-block;
+  width: 275px;
+  height: 200px;
+  vertical-align: top;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px 0px grey;
+  background-color: white;
+}
+
+.Header {
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.Title {
+  display: block;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: justify;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
+  margin: 0px 10px;
+}
+
+.Header:after {
+  display: block;
+  height: 2px;
+  background-color: green;
+  content: " ";
+  margin-top: 10px;
+}
+
+.Details {
+  border-left: 4px solid #72c3fb;
+  margin-left: 5px;
+  padding: 5px 0px;
+}
+
+.Detail {
+  padding: 5px 10px;
+  font-size: 85%;
+  line-height: 1.2rem;
+  text-align: justify;
+  letter-spacing: 1.5px;
+  word-wrap: break-word;
+  word-break: break-all;
+}

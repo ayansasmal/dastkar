@@ -4,13 +4,18 @@ import classes from "./Modal.module.css";
 const Modal = (props) => {
   return (
     <React.Fragment>
-      <div className={classes.Modal} >
-        <button className="close-button" id="close-button" onClick={props.click}>
-          X
-        </button>
+      <div className={classes.Modal}>
+        <div className={classes.Header}>
+          <div className={classes.Title}>
+            <h3>{props.title}</h3>
+          </div>
+          <button className={classes.CloseButton} onClick={props.click}>
+            X
+          </button>
+        </div>
         {props.children}
       </div>
-      <div className={classes.ModalOverlay} id="modal-overlay"></div>
+      <div className={classes.ModalOverlay}></div>
     </React.Fragment>
   );
 };

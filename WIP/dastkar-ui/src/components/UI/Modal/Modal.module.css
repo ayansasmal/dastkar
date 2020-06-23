@@ -24,6 +24,43 @@
 
   background: white;
   box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.Header {
+  display: inline-block;
+  width: 100%;
+}
+
+.Header:after {
+  display: block;
+  height: 2px;
+  background-color: #f7d8aa;
+  content: " ";
+  margin: 35px 0px 0px 0px;
+}
+
+.Title {
+  display: block;
+  float: left;
+  padding: 0px 15px;
+}
+
+.Title h3 {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 125%;
+  text-transform: uppercase;
+}
+
+.CloseButton {
+  float: right;
+  background-color: red;
+  border: none;
+  padding: 2px 7px;
+  margin-right: 15px;
 }
 
 .ModalOverlay {

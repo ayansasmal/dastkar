@@ -3,6 +3,7 @@ import classes from "./Artisans.module.css";
 import Input from "../../components/UI/Input/Input";
 import Tiles from "../../components/Tiles/Tiles";
 import Modal from "../../components/UI/Modal/Modal";
+import Artisan from "../../components/Artisan/Artisan";
 
 const Artisans = (props) => {
   const artisans = [
@@ -60,13 +61,13 @@ const Artisans = (props) => {
 
   const toggleModal = () => {
     setDisplayModal(!displayModal);
-  }
+  };
 
   let modal = null;
   if (displayModal) {
     modal = (
-      <Modal click={toggleModal}>
-        <div>{JSON.stringify(selected)}</div>
+      <Modal click={toggleModal} title={selected.title}>
+        <Artisan {...selected}/>
       </Modal>
     );
   }

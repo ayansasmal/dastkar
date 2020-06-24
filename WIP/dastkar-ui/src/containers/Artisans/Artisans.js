@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import classes from "./Artisans.module.css";
-import Input from "../../components/UI/Input/Input";
 import Tiles from "../../components/Tiles/Tiles";
 import Modal from "../../components/UI/Modal/Modal";
 import Artisan from "../../components/Artisan/Artisan";
 import FormButtonSet from "../../components/Form/FormButtonSet/FormButtonSet";
+import HeaderSearch from "../../components/Header/HeaderSearch/HeaderSearch";
 
 const Artisans = (props) => {
   const artisans = [
@@ -99,24 +99,10 @@ const Artisans = (props) => {
         <div className={classes.Header}>
           <div className={classes.Title}>
             <h3>Artisan Manager</h3>
-            <div className={classes.SearchLarge}>
-              <div className={classes.SearchIcon}>
-                <ion-icon name="search-outline"></ion-icon>
-              </div>
-              <div className={classes.SearchField}>
-                <Input type="text" placeholder="Search by name..." />
-              </div>
-            </div>
+            <HeaderSearch />
           </div>
         </div>
-        <div className={classes.SearchSmall}>
-          <div className={classes.SearchIcon}>
-            <ion-icon name="search-outline"></ion-icon>
-          </div>
-          <div className={classes.SearchField}>
-            <Input type="text" placeholder="Search by name..." />
-          </div>
-        </div>
+        <HeaderSearch mobile={true} />
         <Tiles data={artisans} clicked={exploreArtisan} />
       </div>
       {modal}

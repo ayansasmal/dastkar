@@ -1,7 +1,7 @@
 .Dashboard {
-  box-sizing: border-box;
-  display: inline-flex;
-  width: 100%;
-  justify-content: flex-start;
-  /* border: 10px solid black; */
+  display: block;
+  margin: 20px 40px;
+  background-color: rgb(255,255,255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
 }

@@ -1,0 +1,93 @@
+.SearchLarge {
+  float: right;
+  display: block;
+  border-radius: 5px;
+  padding: 10px 5px 5px 5px;
+  margin-right: 20px;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 300;
+  border: 1px solid grey;
+}
+
+.SearchSmall {
+  display: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-bottom: 3px;
+  margin: 10px 22px;
+  width: 280px;
+  background-color: white;
+}
+
+.SearchBy {
+    display: inline-block;
+    margin-right:5px;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.Chevron {
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.CustomSelect {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+}
+
+.InputSelect {
+  border: none;
+  height: 100%;
+  width: 100px;
+  font-weight: 300;
+  vertical-align: top;
+  padding-left:10px;
+}
+
+.SelectDropDown {
+  position: absolute;
+  margin-top: 10px;
+  z-index: 50;
+  vertical-align: top;
+  background: white;
+  border: 1px solid grey;
+}
+
+.SelectOptions {
+  border-bottom: 1px solid grey;
+  width: 120px;
+  list-style: none;
+  text-decoration: none;
+  padding: 3px 5px;
+}
+
+.InputValue {
+  border: none;
+  height: 100%;
+  font-weight: 300;
+  vertical-align: top;
+  padding:0px 5px;
+  width:120px;
+}
+
+.SearchIcon {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+@media (max-width: 770px) {
+  .SearchSmall {
+    display: block;
+    box-shadow: 0px 2px 4px 0px grey;
+    margin: 15px;
+    width: unset;
+  }
+  .SearchLarge {
+    display: none;
+  }
+}

@@ -3,10 +3,10 @@
   display: block;
 
   /* Probably need media queries here */
-  width: 600px;
+  width: 800px;
   max-width: 100%;
 
-  height: 400px;
+  /* height: 600px; */
   max-height: 100%;
 
   position: fixed;
@@ -45,7 +45,7 @@
 .Title {
   display: block;
   float: left;
-  padding: 0px 15px;
+  padding: 0px 5px;
 }
 
 .Title h3 {
@@ -61,6 +61,7 @@
   border: none;
   padding: 2px 7px;
   margin-right: 15px;
+  color: white;
 }
 
 .ModalOverlay {
@@ -72,4 +73,66 @@
   z-index: 50;
 
   background: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  .Modal {
+    width: 500px;
+    padding: 0px;
+    border-radius: 5px;
+    overflow-y: auto;
+  }
+
+  .Header {
+    background-color: green;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .Title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Header:after {
+    display: none;
+  }
+
+  .CloseButton {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .Modal {
+    width: 300px;
+    padding: 0px;
+    border-radius: 5px;
+    overflow-y: auto;
+  }
+
+  .Header {
+    background-color: green;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .Title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Header:after {
+    display: none;
+  }
+
+  .CloseButton {
+    display: none;
+  }
 }

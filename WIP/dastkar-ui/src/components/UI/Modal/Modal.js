@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Modal.module.css";
+import { minimizeText } from "../../../utils/text-utils";
 
 const Modal = (props) => {
   return (
@@ -7,10 +8,10 @@ const Modal = (props) => {
       <div className={classes.Modal}>
         <div className={classes.Header}>
           <div className={classes.Title}>
-            <h3>{props.title}</h3>
+            <h3>{minimizeText(props.title, 35)}</h3>
           </div>
           <button className={classes.CloseButton} onClick={props.click}>
-            X
+            x
           </button>
         </div>
         {props.children}

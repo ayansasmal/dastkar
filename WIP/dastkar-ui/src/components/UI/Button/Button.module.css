@@ -19,7 +19,6 @@
 .Cancel {
   background-color: #ff5555;
   border: 1px solid #dc2f02;
-  align-self: flex-start;
 }
 
 .Cancel:hover,

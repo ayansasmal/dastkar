@@ -1,17 +1,13 @@
 import React from "react";
 import classes from "./Tile.module.css";
+import { minimizeText } from "../../../utils/text-utils";
 
 const Tile = (props) => {
   const getAddress = (address) => {
     if (address) {
-      return `${address.street}, ${address.locality}, ${address.city}, ${address.state}, ${address.zip}, ${address.country}`;
+      return `${address.street}, ${address.city}, ${address.state}, ${address.zip}, ${address.country}`;
     }
     return undefined;
-  };
-
-  const minimizeText = (text, length) => {
-    if (text.length >= length) return `${text.substr(0, length - 3)}...`;
-    return text;
   };
 
   return (

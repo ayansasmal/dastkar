@@ -4,7 +4,7 @@ import Tile from "../UI/Tile/Tile";
 
 const Tiles = (props) => {
     const tileData = props.data.map((tile, index) => {
-        return <Tile key={index} {...tile} clicked={props.clicked}/>;
+        return <Tile key={index} {...tile} clicked={props.clicked} id={tile.uniqueName}/>;
     });
   return (
     <div className={classes.Tiles}>

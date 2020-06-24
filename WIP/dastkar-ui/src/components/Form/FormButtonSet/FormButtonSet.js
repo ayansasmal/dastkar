@@ -19,7 +19,7 @@ const FormButtonSet = (props) => {
         key="cancel"
         type="cancel"
         name={props.cancelName}
-        onClick={props.onClick}
+        onClick={props.onCancel}
       />
     );
     buttons.push(

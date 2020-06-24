@@ -1,6 +1,4 @@
 .FormButtonSet {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: flex-end;
+  display: inline-block;
+  width: 100%;
 }
